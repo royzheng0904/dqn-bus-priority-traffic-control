@@ -1,0 +1,147 @@
+{
+    "b_0": {
+        "Departure": 0,
+        "Stop": "bs_0",
+        "Arrival delays": 160
+    },
+    "b_1": {
+        "Departure": 0,
+        "Stop": "bs_2",
+        "Arrival delays": 50
+    },
+    "b_2": {
+        "Departure": 0,
+        "Stop": "bs_2",
+        "Arrival delays": 117
+    },
+    "b_3": {
+        "Departure": 8,
+        "Stop": "bs_0",
+        "Arrival delays": 81
+    },
+    "b_4": {
+        "Departure": 16,
+        "Stop": "bs_2",
+        "Arrival delays": 123
+    },
+    "b_5": {
+        "Departure": 21,
+        "Stop": "bs_2",
+        "Arrival delays": 61
+    },
+    "b_6": {
+        "Departure": 13,
+        "Stop": "bs_0",
+        "Arrival delays": 163
+    },
+    "b_7": {
+        "Departure": 53,
+        "Stop": "bs_1",
+        "Arrival delays": 161
+    },
+    "b_8": {
+        "Departure": 115,
+        "Stop": "bs_2",
+        "Arrival delays": 212
+    },
+    "b_9": {
+        "Departure": 162,
+        "Stop": "bs_2",
+        "Arrival delays": 249
+    },
+    "b_10": {
+        "Departure": 39,
+        "Stop": "bs_2",
+        "Arrival delays": 69
+    },
+    "b_11": {
+        "Departure": 31,
+        "Stop": "bs_0",
+        "Arrival delays": 171
+    },
+    "b_12": {
+        "Departure": 20,
+        "Stop": "bs_1",
+        "Arrival delays": 202
+    },
+    "b_13": {
+        "Departure": 222,
+        "Stop": "bs_1",
+        "Arrival delays": 390
+    },
+    "b_14": {
+        "Departure": 240,
+        "Stop": "bs_2",
+        "Arrival delays": 287
+    },
+    "b_15": {
+        "Departure": 37,
+        "Stop": "bs_1",
+        "Arrival delays": 209
+    },
+    "b_16": {
+        "Departure": 271,
+        "Stop": "bs_2",
+        "Arrival delays": 318
+    },
+    "b_17": {
+        "Departure": 51,
+        "Stop": "bs_1",
+        "Arrival delays": 223
+    },
+    "b_18": {
+        "Departure": 356,
+        "Stop": "bs_2",
+        "Arrival delays": 393
+    },
+    "b_19": {
+        "Departure": 99,
+        "Stop": "bs_1",
+        "Arrival delays": 261
+    },
+    "b_20": {
+        "Departure": 81,
+        "Stop": "bs_2",
+        "Arrival delays": 131
+    },
+    "b_21": {
+        "Departure": 374,
+        "Stop": "bs_2",
+        "Arrival delays": 401
+    },
+    "b_22": {
+        "Departure": 72,
+        "Stop": "bs_0",
+        "Arrival delays": 162
+    },
+    "b_23": {
+        "Departure": 114,
+        "Stop": "bs_1",
+        "Arrival delays": 206
+    },
+    "b_24": {
+        "Departure": 447,
+        "Stop": "bs_1",
+        "Arrival delays": 585
+    },
+    "b_25": {
+        "Departure": 475,
+        "Stop": "bs_2",
+        "Arrival delays": 402
+    },
+    "b_26": {
+        "Departure": 483,
+        "Stop": "bs_1",
+        "Arrival delays": 471
+    },
+    "b_27": {
+        "Departure": 552,
+        "Stop": "bs_2",
+        "Arrival delays": 429
+    },
+    "b_28": {
+        "Departure": 560,
+        "Stop": "bs_1",
+        "Arrival delays": 518
+    }
+}

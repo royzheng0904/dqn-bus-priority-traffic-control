@@ -1,0 +1,230 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+
+
+    <!-- Define Routes bus route (0,1,2,9,10,11)-->
+    <route id="route_0" edges="E7 E7.152 E7.370 E7.686"/>    
+    <route id="route_1" edges="E5 E8.219 E6.126 E7.370 E1.35.508"/>
+    <route id="route_2" edges="E1 -E5.61 -E5.367 -E5.786"/>
+    <route id="route_3" edges="E8 E8.219 E8.469"/>
+    <route id="route_4" edges= "E6 E6.126 E7.370 E1.35.508"/>
+    <route id="route_5" edges= "E6 E6.126 E7.370 E7.686"/>
+    <route id="route_6" edges= "-E7 -E7.202 -E7.335 -E7.557"/>
+    <route id="route_7" edges= "-E6 -E6.196 -E6.405 E8.469"/>
+    <route id="route_8" edges= "E1 E1.35 -E6.196 -E6.405 E8.469"/>
+    <route id="route_9" edges= "E1 E1.35 E1.35.270 E1.35.508"/>
+    <route id="route_10" edges= "E1 E1.35 E1.35.270 E7.686"/>
+    <route id="route_11" edges = "-E5 -E5.61 -E5.367 -E5.786"/>
+    <!-- Define Vehicle Types -->
+    <vType id="bus" vClass="bus" color="yellow" maxSpeed="2.5"/>
+    <vType id="car" maxSpeed="8"/>
+
+    <!-- Mixed Departures (sorted by departure time) -->
+
+    <vehicle id="b_0" type="bus" depart="0.00" route="route_0">
+        <stop busStop="bs_0" duration="20" arrival = "160"/>
+    </vehicle>
+    <vehicle id="b_1" type="bus" depart="0.00" route="route_11">
+        <stop busStop="bs_2" duration="10" arrival = "210"/>
+    </vehicle>
+    <vehicle id="b_2" type="bus" depart="0.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "110"/>
+    </vehicle>
+    <vehicle id="b_3" type="bus" depart="0.00" route="route_10">
+        <stop busStop="bs_0" duration="15" arrival = "220"/>
+    </vehicle>
+    <vehicle id="b_4" type="bus" depart="0.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "120"/>
+    </vehicle>
+    <vehicle id="c_1" type="car" depart="0.00" route="route_0"/>
+    <vehicle id="c_2" type="car" depart="0.00" route="route_2"/>
+    <vehicle id="c_3" type="car" depart="0.00" route="route_3"/>
+    <vehicle id="c_4" type="car" depart="0.00" route="route_2"/>
+    <vehicle id="c_5" type="car" depart="0.00" route="route_7"/>
+    <vehicle id="c_6" type="car" depart="0.00" route="route_2"/>
+    <vehicle id="c_7" type="car" depart="0.00" route="route_11"/>
+    <vehicle id="c_8" type="car" depart="0.00" route="route_3"/>
+    <vehicle id="c_9" type="car" depart="0.00" route="route_4"/>
+    <vehicle id="c_10" type="car" depart="0.00" route="route_11"/>
+    <vehicle id="c_11" type="car" depart="0.00" route="route_5"/>
+    <vehicle id="c_12" type="car" depart="0.00" route="route_2"/>
+    <vehicle id="c_13" type="car" depart="0.00" route="route_6"/>
+    <vehicle id="c_14" type="car" depart="0.00" route="route_11"/>
+    <vehicle id="c_15" type="car" depart="0.00" route="route_2"/>
+    <vehicle id="c_16" type="car" depart="0.00" route="route_7"/>
+    <vehicle id="c_17" type="car" depart="0.00" route="route_8"/>
+
+    <vehicle id="b_5" type="bus" depart="10.00" route="route_11">
+        <stop busStop="bs_2" duration="15" arrival = "220"/>
+    </vehicle>
+    <vehicle id="b_6" type="bus" depart="10.00" route="route_0">
+        <stop busStop="bs_0" duration="20" arrival = "170"/>
+    </vehicle>
+    <vehicle id="b_7" type="bus" depart="10.00" route="route_9">
+        <stop busStop="bs_1" duration="10" arrival = "230"/>
+    </vehicle>
+    <vehicle id="b_8" type="bus" depart="10.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "130"/>
+    </vehicle>
+    <vehicle id="c_18" type="car" depart="10.00" route="route_8"/>
+    <vehicle id="c_19" type="car" depart="10.00" route="route_2"/>
+    <vehicle id="c_20" type="car" depart="10.00" route="route_0"/>
+    <vehicle id="c_21" type="car" depart="10.00" route="route_8"/>
+    <vehicle id="c_22" type="car" depart="10.00" route="route_11"/>
+    <vehicle id="c_23" type="car" depart="10.00" route="route_0"/>
+    <vehicle id="c_24" type="car" depart="10.00" route="route_8"/>
+    <vehicle id="c_25" type="car" depart="10.00" route="route_2"/>
+    <vehicle id="c_26" type="car" depart="10.00" route="route_8"/>
+    <vehicle id="c_27" type="car" depart="10.00" route="route_5"/>
+    <vehicle id="c_28" type="car" depart="10.00" route="route_8"/>
+    <vehicle id="c_29" type="car" depart="10.00" route="route_2"/>
+    <vehicle id="c_30" type="car" depart="10.00" route="route_11"/>
+
+    <vehicle id="b_9" type="bus" depart="20.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "140"/>
+    </vehicle>
+    <vehicle id="b_10" type="bus" depart="20.00" route="route_11">
+        <stop busStop="bs_2" duration="15" arrival = "230"/>
+    </vehicle>
+    <vehicle id="b_11" type="bus" depart="20.00" route="route_0">
+        <stop busStop="bs_0" duration="20" arrival = "180"/>
+    </vehicle>
+    <vehicle id="b_12" type="bus" depart="20.00" route="route_1">
+        <stop busStop="bs_1" duration="10" arrival = "240"/>
+    </vehicle>
+    <vehicle id="b_13" type="bus" depart="20.00" route="route_9">
+        <stop busStop="bs_1" duration="15" arrival = "170"/>
+    </vehicle>
+    <vehicle id="c_31" type="car" depart="20.00" route="route_1"/>
+    <vehicle id="c_32" type="car" depart="20.00" route="route_3"/>
+    <vehicle id="c_33" type="car" depart="20.00" route="route_4"/>
+    <vehicle id="c_34" type="car" depart="20.00" route="route_11"/>
+    <vehicle id="c_35" type="car" depart="20.00" route="route_6"/>
+    <vehicle id="c_36" type="car" depart="20.00" route="route_7"/>
+    <vehicle id="c_37" type="car" depart="20.00" route="route_8"/>
+    <vehicle id="c_38" type="car" depart="20.00" route="route_5"/>
+    <vehicle id="c_39" type="car" depart="20.00" route="route_3"/>
+    <vehicle id="c_40" type="car" depart="20.00" route="route_2"/>
+    <vehicle id="c_41" type="car" depart="20.00" route="route_11"/>
+    <vehicle id="c_42" type="car" depart="20.00" route="route_0"/>
+    <vehicle id="c_43" type="car" depart="20.00" route="route_1"/>
+    <vehicle id="c_44" type="car" depart="20.00" route="route_5"/>
+    <vehicle id="c_45" type="car" depart="20.00" route="route_0"/>
+
+    <vehicle id="b_14" type="bus" depart="30.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "180"/>
+    </vehicle>
+    <vehicle id="b_15" type="bus" depart="30.00" route="route_1">
+        <stop busStop="bs_1" duration="15" arrival = "250"/>
+    </vehicle>
+    <vehicle id="c_46" type="car" depart="30.00" route="route_1"/>
+    <vehicle id="c_47" type="car" depart="30.00" route="route_2"/>
+    <vehicle id="c_48" type="car" depart="30.00" route="route_3"/>
+    <vehicle id="c_49" type="car" depart="30.00" route="route_11"/>
+    <vehicle id="c_50" type="car" depart="30.00" route="route_5"/>
+    <vehicle id="c_51" type="car" depart="30.00" route="route_0"/>
+    <vehicle id="c_52" type="car" depart="30.00" route="route_8"/>
+    <vehicle id="c_53" type="car" depart="30.00" route="route_2"/>
+    <vehicle id="c_54" type="car" depart="30.00" route="route_11"/>
+    <vehicle id="c_55" type="car" depart="30.00" route="route_8"/>
+    <vehicle id="c_56" type="car" depart="30.00" route="route_2"/>
+    <vehicle id="c_57" type="car" depart="30.00" route="route_0"/>
+
+    <vehicle id="b_16" type="bus" depart="40.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "180"/>
+    </vehicle>
+    <vehicle id="b_17" type="bus" depart="40.00" route="route_1">
+        <stop busStop="bs_1" duration="15" arrival = "250"/>
+    </vehicle>
+    <vehicle id="c_58" type="car" depart="40.00" route="route_1"/>
+    <vehicle id="c_59" type="car" depart="40.00" route="route_2"/>
+    <vehicle id="c_60" type="car" depart="40.00" route="route_8"/>
+    <vehicle id="c_61" type="car" depart="40.00" route="route_11"/>
+    <vehicle id="c_62" type="car" depart="40.00" route="route_1"/>
+    <vehicle id="c_63" type="car" depart="40.00" route="route_7"/>
+    <vehicle id="c_64" type="car" depart="40.00" route="route_1"/>
+    <vehicle id="c_65" type="car" depart="40.00" route="route_11"/>
+    <vehicle id="c_66" type="car" depart="40.00" route="route_2"/>
+    <vehicle id="c_67" type="car" depart="40.00" route="route_5"/>
+    <vehicle id="c_68" type="car" depart="40.00" route="route_8"/>
+    <vehicle id="c_69" type="car" depart="40.00" route="route_2"/>
+    <vehicle id="c_70" type="car" depart="40.00" route="route_4"/>
+
+    <vehicle id="b_18" type="bus" depart="50.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "190"/>
+    </vehicle>
+    <vehicle id="b_19" type="bus" depart="50.00" route="route_1">
+        <stop busStop="bs_1" duration="15" arrival = "260"/>
+    </vehicle>
+    <vehicle id="c_71" type="car" depart="50.00" route="route_2"/>
+    <vehicle id="c_72" type="car" depart="50.00" route="route_11"/>
+    <vehicle id="c_73" type="car" depart="50.00" route="route_8"/>
+    <vehicle id="c_74" type="car" depart="50.00" route="route_5"/>
+    <vehicle id="c_75" type="car" depart="50.00" route="route_0"/>
+    <vehicle id="c_76" type="car" depart="50.00" route="route_3"/>
+    <vehicle id="c_77" type="car" depart="50.00" route="route_4"/>
+    <vehicle id="c_78" type="car" depart="50.00" route="route_0"/>
+
+    <vehicle id="b_20" type="bus" depart="60.00" route="route_11">
+        <stop busStop="bs_2" duration="15" arrival = "210"/>
+    </vehicle>
+    <vehicle id="b_21" type="bus" depart="60.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "200"/>
+    </vehicle>
+    <vehicle id="c_79" type="car" depart="60.00" route="route_7"/>
+    <vehicle id="c_80" type="car" depart="60.00" route="route_8"/>
+    <vehicle id="c_81" type="car" depart="60.00" route="route_2"/>
+    <vehicle id="c_82" type="car" depart="60.00" route="route_5"/>
+    <vehicle id="c_83" type="car" depart="60.00" route="route_3"/>
+    <vehicle id="c_84" type="car" depart="60.00" route="route_4"/>
+    <vehicle id="c_85" type="car" depart="60.00" route="route_0"/>
+    <vehicle id="c_86" type="car" depart="60.00" route="route_8"/>
+    <vehicle id="c_87" type="car" depart="60.00" route="route_6"/>
+    <vehicle id="c_88" type="car" depart="60.00" route="route_1"/>
+
+    <vehicle id="b_22" type="bus" depart="70.00" route="route_0">
+        <stop busStop="bs_0" duration="15" arrival = "230"/>
+    </vehicle>
+    <vehicle id="b_23" type="bus" depart="70.00" route="route_1">
+        <stop busStop="bs_1" duration="15" arrival = "330"/>
+    </vehicle>
+    <vehicle id="b_24" type="bus" depart="70.00" route="route_9">
+        <stop busStop="bs_1" duration="15" arrival = "200"/>
+    </vehicle>
+    <vehicle id="c_89" type="car" depart="70.00" route="route_1"/>
+    <vehicle id="c_90" type="car" depart="70.00" route="route_7"/>
+    
+    <vehicle id="c_91" type="car" depart="70.00" route="route_8"/>
+    <vehicle id="c_92" type="car" depart="70.00" route="route_2"/>
+    <vehicle id="c_93" type="car" depart="70.00" route="route_5"/>
+    <vehicle id="c_94" type="car" depart="70.00" route="route_3"/>
+    <vehicle id="c_95" type="car" depart="80.00" route="route_4"/>
+    <vehicle id="c_96" type="car" depart="80.00" route="route_0"/>
+    <vehicle id="c_97" type="car" depart="80.00" route="route_8"/>
+    <vehicle id="c_98" type="car" depart="80.00" route="route_6"/>
+    <vehicle id="c_99" type="car" depart="80.00" route="route_8"/>
+    <vehicle id="c_100" type="car" depart="80.00" route="route_5"/>
+
+    <vehicle id="b_25" type="bus" depart="90.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "300"/>
+    </vehicle>
+    <vehicle id="b_26" type="bus" depart="90.00" route="route_9">
+        <stop busStop="bs_1" duration="15" arrival = "350"/>
+    </vehicle>
+    <vehicle id="c_101" type="car" depart="90.00" route="route_4"/>
+    <vehicle id="c_102" type="car" depart="90.00" route="route_0"/>
+    <vehicle id="c_103" type="car" depart="90.00" route="route_8"/>
+    <vehicle id="c_104" type="car" depart="90.00" route="route_6"/>
+    <vehicle id="c_105" type="car" depart="90.00" route="route_8"/>
+    <vehicle id="c_106" type="car" depart="90.00" route="route_5"/>
+
+    <vehicle id="b_27" type="bus" depart="100.00" route="route_2">
+        <stop busStop="bs_2" duration="15" arrival = "350"/>
+    </vehicle>
+    <vehicle id="b_28" type="bus" depart="100.00" route="route_9">
+        <stop busStop="bs_1" duration="15" arrival = "380"/>
+    </vehicle>
+    <vehicle id="c_107" type="car" depart="100.00" route="route_9"/>
+    <vehicle id="c_108" type="car" depart="100.00" route="route_11"/>
+    <vehicle id="c_109" type="car" depart="100.00" route="route_10"/>
+    <vehicle id="c_110" type="car" depart="100.00" route="route_5"/>
+</routes>
