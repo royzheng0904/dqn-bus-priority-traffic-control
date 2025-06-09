@@ -12,7 +12,7 @@ To investigate whether reinforcement learning can serve as a viable approach for
 - **Environment**: SUMO (Simulation of Urban Mobility)
 - **State Space**:
   - Queue lengths (N, E, S, W)
-  - Bus lateness per direction (N, E, S, W)
+  - Average Bus lateness in seconds(At the traffic lights)
   - Current traffic phase
 - **Action Space**: Discrete phase choices (e.g., NS or EW green)
 - **Reward Function**:
