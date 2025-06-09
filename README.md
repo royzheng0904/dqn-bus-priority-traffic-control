@@ -29,13 +29,13 @@ To investigate whether reinforcement learning can serve as a viable approach for
   - Congestion Level
   - Total Episode Reward (RL only)
 
-## 🧪 Project Structure
+## Project Structure
 
 ```
-├── rlAgent.py                  # Multi-agent DQN controller
+├── rlAgent.py                 # Multi-agent DQN controller
 ├── testfile.py                # Single-agent test
 ├── busTT.py                   # Timetable extractor
-├── busTTdisplay.py           # Timetable visualiser
+├── busTTdisplay.py            # Timetable visualiser
 ├── bus_priority_no_agent.py   # Rule-based controller
 ├── bus_timetable.json         # Bus travel time logs
 ├── busstop.xml                # Bus stop definitions
@@ -45,7 +45,7 @@ To investigate whether reinforcement learning can serve as a viable approach for
 └── README.md
 ```
 
-## 🚀 Running the Project
+## Running the Project
 
 Train multi-agent DQN:
 ```bash
@@ -58,23 +58,13 @@ python bus_priority_no_agent.py
 ```
 
 
-## 📦 Requirements
+## Requirements
 
 Install Python dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-### requirements.txt
-```
-tensorflow
-keras
-numpy
-matplotlib
-pandas
-sumolib
-traci
-```
 
 ## Results Summary
 
