@@ -2,11 +2,11 @@
 
 This project implements a Deep Q-Network (DQN) reinforcement learning model to optimize traffic signal timings with a focus on prioritizing delayed public buses, using the SUMO traffic simulator.
 
-## 🎯 Objective
+## Objective
 
 To investigate whether reinforcement learning can serve as a viable approach for intelligent traffic signal control—particularly one that responds to real-time traffic conditions while prioritizing delayed public buses.
 
-## 🧠 Reinforcement Learning Details
+## Reinforcement Learning Details
 
 - **Algorithm**: Deep Q-Network (DQN)
 - **Environment**: SUMO (Simulation of Urban Mobility)
@@ -19,7 +19,7 @@ To investigate whether reinforcement learning can serve as a viable approach for
   - Penalizes bus lateness (weighted higher)
   - Penalizes traffic congestion (secondary)
 
-## ⚙️ System Architecture
+## System Architecture
 
 - **Simulation Control**: Python with TraCI API
 - **Machine Learning**: TensorFlow/Keras
@@ -32,7 +32,6 @@ To investigate whether reinforcement learning can serve as a viable approach for
 ## 🧪 Project Structure
 
 ```
-.
 ├── rlAgent.py                  # Multi-agent DQN controller
 ├── testfile.py                # Single-agent test
 ├── busTT.py                   # Timetable extractor
@@ -58,15 +57,6 @@ Run a rule-based baseline:
 python bus_priority_no_agent.py
 ```
 
-Extract bus timetable data:
-```bash
-python busTT.py
-```
-
-Display timetable results:
-```bash
-python busTTdisplay.py
-```
 
 ## 📦 Requirements
 
@@ -86,26 +76,15 @@ sumolib
 traci
 ```
 
-## 📈 Results Summary
+## Results Summary
 
 - The DQN agent shows a steady reduction in congestion and an increase in total reward over episodes.
 - Although the rule-based controller achieves lower bus delays, it increases congestion.
 - The RL-based method balances efficiency and fairness and shows great promise with more training.
 
-## 🔮 Future Work
+##  Future Work
 
 - Multi-agent coordination for network-wide optimisation
 - Integration with real-time GPS data
 - Deployment in complex or real-world traffic networks
 
-## 👨‍💻 Author
-
-**Roy Zheng**  
-BSc Computer Science, Trinity College Dublin  
-Incoming MSc Artificial Intelligence and Data Engineering, UCL
-
----
-
-## 📜 License
-
-MIT License
